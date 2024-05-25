@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import EditarMiembro from '../components/miembros/EditarMiembro.vue';
 import NewMiembro from '../components/miembros/NewMiembro.vue';
 import HomeView from '../views/HomeView.vue'
+import Clases from '../views/Clases';
 import Miembros from '../views/Miembros';
 
 const routes = [
