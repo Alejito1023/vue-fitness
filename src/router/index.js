@@ -2,8 +2,11 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import EditarMiembro from '../components/miembros/EditarMiembro.vue';
 import NewMiembro from '../components/miembros/NewMiembro.vue';
+import EditarEquipo from '../components/equipos/EditarEquipo.vue';
+import NewEquipo from '../components/equipos/NewEquipo.vue';
 import HomeView from '../views/HomeView.vue'
 import Miembros from '../views/Miembros';
+import Equipos from '../views/Miembros';
 
 const routes = [
   {
@@ -26,6 +29,22 @@ const routes = [
     path: '/add-miembro/',
     name: 'NewMiembro',
     component: NewMiembro
+  },
+  {
+    path: '/equipos',
+    name: 'Equipos',
+    component: Equipos
+  },
+  {
+    path: '/editar-equipo/id',
+    name: 'EditarEquipo',
+    component : EditarEquipo
+  },
+
+  {
+    path: '/add-equipo/',
+    name: 'NewEquipo',
+    component: NewEquipo
   },
 
 
