@@ -2,9 +2,14 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import EditarMiembro from '../components/miembros/EditarMiembro.vue';
 import NewMiembro from '../components/miembros/NewMiembro.vue';
+import EditarClase from '../components/clases/EditarClase.vue';
+import NewClase from '../components/clases/NewClase.vue';
+import EditarInscripcion from '../components/inscripciones/EditarInscripcion.vue';
+import NewInscripcion from '../components/inscripciones/NewInscripcion.vue';
 import HomeView from '../views/HomeView.vue'
 import Clases from '../views/Clases';
 import Miembros from '../views/Miembros';
+import Inscripciones from '@/views/Inscripciones.vue';
 
 const routes = [
   {
@@ -27,6 +32,38 @@ const routes = [
     path: '/add-miembro/',
     name: 'NewMiembro',
     component: NewMiembro
+  },
+  {
+    path: '/clases',
+    name: 'Clases',
+    component: Clases
+  },
+  {
+    path: '/editar-clase/id',
+    name: 'EditarClase',
+    component : EditarClase
+  },
+
+  {
+    path: '/add-clase/',
+    name: 'NewClase',
+    component: NewClase
+  },
+  {
+    path: '/inscripciones',
+    name: 'inscripciones',
+    component: Inscripciones
+  },
+  {
+    path: '/editar-inscripciones/id',
+    name: 'EditarInscripciones',
+    component : EditarInscripcion
+  },
+
+  {
+    path: '/add-inscripciones/',
+    name: 'NewInscripciones',
+    component: NewInscripcion
   },
 
 
